@@ -11,6 +11,10 @@ export const metadata = {
   description: "20 ans d'expertise en rénovation intérieure. Le prestige Haussmannien rencontre la précision moderne.",
 };
 
+export function generateStaticParams() {
+  return [{ locale: 'fr' }, { locale: 'es' }, { locale: 'en' }, { locale: 'ar' }];
+}
+
 export default async function RootLayout({
   children,
   params,
