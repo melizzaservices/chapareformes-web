@@ -1,8 +1,9 @@
-export const generateLocalBusinessSchema = (locale: "fr" | "es" | "en") => {
+export const generateLocalBusinessSchema = (locale: "fr" | "es" | "en" | "ar") => {
   const descriptions = {
     fr: "Rénovation de luxe à Paris. 20 ans d'expertise en design Haussmannien et minimalisme.",
     es: "Reformas de lujo en París. 20 años de experiencia en diseño Haussmanniano y minimalismo.",
-    en: "Luxury renovations in Paris. 20 years of expertise in Haussmann design and minimalism."
+    en: "Luxury renovations in Paris. 20 years of expertise in Haussmann design and minimalism.",
+    ar: "تجديدات فاخرة في باريس. 20 عاماً من الخبرة في تصميم هوسمان والبساطة."
   };
 
   return {
