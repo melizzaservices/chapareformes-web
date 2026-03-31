@@ -2,11 +2,12 @@
 
 import { motion } from "framer-motion";
 
-export default function Hero({ locale }: { locale: "fr" | "es" | "en" }) {
+export default function Hero({ locale }: { locale: "fr" | "es" | "en" | "ar" }) {
   const titles = {
     fr: { head: "L'Excellence", sub: "Haussmannienne", p: "20 ans de perfection à Paris." },
     es: { head: "La Excelencia", sub: "Haussmanniana", p: "20 años de perfección en París." },
-    en: { head: "The Excellence", sub: "Of Haussmann", p: "20 years of perfection in Paris." }
+    en: { head: "The Excellence", sub: "Of Haussmann", p: "20 years of perfection in Paris." },
+    ar: { head: "التميز", sub: "على طراز هوسمان", p: "20 عاماً من المثالية في باريس." }
   };
   const t = titles[locale] || titles.fr;
 

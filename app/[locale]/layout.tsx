@@ -24,7 +24,8 @@ export default async function RootLayout({
 }) {
   const { locale } = await params;
   const dir = locale === "ar" ? "rtl" : "ltr";
-  const jsonLd = generateLocalBusinessSchema(locale as any);
+  const validLocale = locale as "fr" | "es" | "en" | "ar";
+  const jsonLd = generateLocalBusinessSchema(validLocale);
 
   return (
     <html lang={locale} dir={dir}>
@@ -38,7 +39,7 @@ export default async function RootLayout({
         <main className="relative min-h-screen">
           {children}
         </main>
-        <FloatingCTA locale={locale as any} />
+        <FloatingCTA locale={validLocale} />
       </body>
     </html>
   );

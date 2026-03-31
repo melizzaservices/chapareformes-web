@@ -2,11 +2,12 @@
 
 import { motion } from "framer-motion";
 
-export default function FloatingCTA({ locale }: { locale: "fr" | "es" | "en" }) {
+export default function FloatingCTA({ locale }: { locale: "fr" | "es" | "en" | "ar" }) {
   const ctaText = {
     fr: "Appel Immédiat",
     es: "Llamada Inmediata",
-    en: "Call Now"
+    en: "Call Now",
+    ar: "اتصل الآن"
   };
   const text = ctaText[locale] || ctaText.fr;
 
